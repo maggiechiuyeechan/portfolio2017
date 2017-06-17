@@ -1,0 +1,25 @@
+.innerPagesHeader {
+	position: fixed;
+	width: 75%;
+	right: 50%;
+	transform: translateX(50%);	
+	margin-top: 2rem;
+	z-index: 1;
+}
+
+.projectTitle {
+	margin-top: 7rem;
+}
+
+.projectHeroImg {
+	//height: 80vh;
+	z-index: -1;
+}
+.projectDetails {
+	display: flex;
+}
+
+.projectDetails__item {
+	width: 16%;
+	margin: 0.75%;
+}

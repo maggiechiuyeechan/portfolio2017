@@ -1,13 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title>Hello</title>
+	<title>Maggie Chiu Yee Chan</title>
+	<script src="https://use.typekit.net/xvs0nhr.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/styles.css">
 </head>
 <body>
-	<h1>Test</h1>
-	<p> hello</p>
-	<p> try again </p>
+	<header>
+		<div class="colouredBackground"></div>
+		<div class="homeHeader medWrapper">
+			<nav class="topNav__container">
+				<p>Currently learning: React.js</p>
+				<ul class="topNav__links">
+					<li><a href="">About me</a></li>
+					<li><a href="">Project</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="homeHero">
+				<h5>Selected works of:</h5>
+				<h1>Maggie Chiu Yee Chan</h1>
+				<h5>A blend of design and code, focused on building thoughtful digital experiences.</h5>
+			</div>
+		</div>
+	</header>
+
+	<section class="homeGallery lrgWrapper">
+
+		<nav class="homeGallery__Nav filter-button-group medWrapper">
+			<button data-filter="*">Show all</button>
+			<button data-filter=".ui-ux">UI/UX Design</button>
+			<button data-filter=".development">Development</button>
+			<button data-filter=".data-visualization">Data Visualization</button>
+			<button data-filter=".immersive-experiences">Immersive Experiences</button>
+		</nav>
+
+			<!-- li.type*12>div.homeGallery__item>a>div.homeGallery__imageContainer>img.homeGallery__images.isotopeclass[srcset][sizes="50vw"]+h2+h5
+			 -->
+			<!-- 			<img class="gallery-img" 
+						srcset="img/gallery_600px.jpg 600w, 
+								img/gallery_400px.jpg 400w,
+								img/gallery_200px.jpg 200w"
+						sizes="50vw">
+			 -->
+		<ul class="homeGallery__container grid medWrapper">
+			<li class="homeGallery__item ui-ux development"><a href="">
+						<div class="homeGallery__imageContainer">
+							<img alt="" class="homeGallery__images isotopeclass" 
+								srcset="assets/homeGallery/Way.jpg" sizes="50vw">
+							<div class = "homeGallery__images__textContainer">
+								<h2>React.js Application</h2>
+								<h5><strong>Design and Development </strong> React.js, Firebase, Mapbox, JavaScript, HTML, CSS</h5>
+							</div>
+						</div>
+					</a>
+			</li>
+			<li class="homeGallery__item development"><a href="">
+						<div class="homeGallery__imageContainer">
+							<img alt="" class="homeGallery__images isotopeclass" 
+								srcset="assets/homeGallery/LCBO.jpg" sizes="50vw">
+							<div class = "homeGallery__images__textContainer">
+
+								<h2>Working with LCBO API</h2>
+								<h5><strong>Design and Development </strong>
+								API, JQuery, JavaScript, HTML, CSS</h5>
+
+							</div>
+						</div>
+				</a></li>
+
+			<li class="homeGallery__item  ui-ux full-width"><a href="BlueDot_Product.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+						srcset="assets/homeGallery/BD_prod.jpg" sizes="50vw">
+
+						<div class = "homeGallery__images__textContainer">
+							<h2>Designing Tools for Public Health Using Big Data</h2>
+							<h5><strong>Product Design </strong> Adobe Illustrator, Sketch, Invision</h5>
+						</div>
+					</div>
+				</a></li>
+
+			<li class="homeGallery__item data-visualization development full-width">
+				<a href="BlueDot_Vis.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+							srcset="assets/homeGallery/BD_vis.jpg" sizes="50vw">
+						<div class = "homeGallery__images__textContainer">
+							<h2>Visualizing Data for Public Health</h2>
+							<h5><strong>Data Visualization </strong>Adobe Illustrator, ArcGIS, HTML/CSS, D3.js</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item ui-ux data-visualization full-width">
+				<a href="Wildflowers.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+							srcset="assets/homeGallery/WF.jpg" sizes="50vw">
+						<div class = "homeGallery__images__textContainer">
+							<h2>Wildflowers</h2>
+							<h5><strong>Product Design </strong>Sketch, Adobe Illustrator, Adobe Photoshop</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item ui-ux immersive-experiences">
+				<a href="Chthuluscene.html">
+					<div class="homeGallery__imageContainer">
+					<img alt="" class="homeGallery__images isotopeclass" 
+						srcset="assets/homeGallery/Chth.jpg" sizes="50vw">
+
+						<div class = "homeGallery__images__textContainer">
+							<h2>Chthuluscene: Nuit Blanche 2015</h2>
+							<h5><strong class="Role">Experience Design </strong>Adobe Illustrator, Sketch, Adobe Premier Pro</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item data-visualization immersive-experiences">
+				<a href="Sharp.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+						srcset="assets/homeGallery/Sharp.jpg" sizes="50vw">
+						<div class = "homeGallery__images__textContainer">
+							<h2>Sharp Center Gala</h2>
+							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe AfterEffects</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item data-visualization immersive-experiences full-width">
+				<a href="ITAT.html">
+					<div class="homeGallery__imageContainer">
+					<img alt="" class="homeGallery__images isotopeclass" 
+						srcset="assets/homeGallery/ITAT.jpg" sizes="50vw">
+					<div class = "homeGallery__images__textContainer">
+						<h2>In the Air, Tonight</h2>
+						<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
+					</div>
+				</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item data-visualization">
+				<a href="CityOfHomelands_Map.html">
+					<div class="homeGallery__imageContainer">
+					<img alt="" class="homeGallery__images isotopeclass" 
+						srcset="assets/homeGallery/CH_Map.jpg" sizes="50vw">
+					<div class = "homeGallery__images__textContainer">
+						<h2>City of Homelands: Maps</h2>
+						<h5><strong>Data Visualization </strong> Mapbox/Tilemill, QGIS, LibreOffice, Adobe Illustrator</h5>
+					</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item immersive-experiences">
+				<a href="CityOfHomelands_Installation.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+							srcset="assets/homeGallery/CH_inst.jpg" sizes="50vw">
+						<div class = "homeGallery__images__textContainer">
+							<h2>City of Homelands: Installation</h2>
+							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item ui-ux">
+				<a href="ACT.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+							srcset="assets/homeGallery/ACT.jpg" sizes="50vw">
+						<div class = "homeGallery__images__textContainer">
+							<h2>Acceptance and Commitment Therapy Mobile App Concept</h2>
+							<h5><strong>Product Design </strong> Adobe Adobe Illustrator</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+
+<!-- 			<li class="homeGallery__item data-visualization">
+				<a href="">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images isotopeclass" 
+							srcset="assets/homeGallery/24H.jpg" sizes="50vw">
+
+						<div class = "homeGallery__images__textContainer">
+							<h2>24 Hours</h2>
+							<h5><strong class="Role">Data Visualization </strong>Adobe Illustrator</h5>
+						</div>
+					</div>
+				</a>
+			</li>
+ -->
+		</ul>
+	</section>
+
+	<section class="homeAbout">
+		<div class="homeAbout__container medWrapper">
+			<div class="homeAbout__bio">
+				<h2>About Me</h2>
+				<p class="body-text">I work as an interaction and experience designer based out of Toronto. </p>
+				<p class="body-text">Inspired by the exciting opportunities presented by new technologies and media, I’m excited by designing compelling experiences, and building innovative ways of engaging with information through our world of connected objects, data visualizations and screen-based interfaces.
+				</p class="body-text">
+				<p class="body-text">
+				I have a particular interest in design and development for policy-making, social change and civic engagement. My goal is to imagine and build a brighter future.
+				</p>
+				<a href="">See full experience</a>
+			</div>
+			<div class="tech__tools">
+				<h2>Tech Tools</h2>
+				<div class="iconContainer">
+					<i class="devicon-react-original"></i>
+					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-jquery-plain"></i>
+					<i class="devicon-html5-plain"></i>
+					<i class="devicon-css3-plain"></i>
+					<i class="devicon-sass-original"></i>
+					<i class="devicon-github-plain"></i>
+					<i class="devicon-gulp-plain"></i>
+					<i class="devicon-d3js-plain"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<h2> Say Hello </h2>
+		<h3> mail@maggiechan.io </h3>
+		<ul>
+			<li>Medium</li>
+			<li>Twitter</li>
+			<li>Linkedin</li>
+			<li>Github</li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script src = "public/scripts/main.js"></script>
 </body>
 </html>

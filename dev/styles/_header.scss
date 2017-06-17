@@ -1,0 +1,36 @@
+// .homeHeader * {
+// 	border: 1px solid red;
+// }
+
+.colouredBackground {
+	background-color: $blocking;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	height: 125vh;
+	z-index: -1;
+}
+
+.homeHero{
+	margin: auto;
+}
+
+.homeHeader {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	height: 70vh;
+}
+
+.topNav__container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.topNav__links li{
+	padding-left: 2rem;
+	font-weight: $bold;
+}

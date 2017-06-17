@@ -1,0 +1,48 @@
+.homeAbout {
+	background-color: $accent;
+	color: $background;
+}
+
+
+.homeAbout__container {
+	display: flex;
+}
+
+.homeAbout__bio {
+	width: 50%;
+	padding: 1rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-right: 6rem;
+
+	p {
+		margin-top: 1rem; 
+	}
+
+	h2{
+		margin-bottom: 2rem;
+	}
+
+} 
+
+.tech__tools {
+	width: 50%;
+	padding: 1rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	h2{
+		margin-bottom: 2rem;
+	}
+}
+
+.iconContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	i {
+		font-size: 3rem;
+		margin: 2rem;
+	}
+}

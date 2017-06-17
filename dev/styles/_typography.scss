@@ -1,0 +1,109 @@
+//$titleFamily: "poppins", "helvetica", "calibre", "sans-serif";
+$titleFamily: "brandon-grotesque", sans-serif;
+$bodyFamily: "adelle-sans", sans-serif;
+$light: 300;
+$bold: 500;
+
+button {
+  font-family: $titleFamily;
+  color: $darkestGrey;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+}
+
+
+html, a {
+  font-family: $bodyFamily;
+  color: $darkestGrey;
+  font-weight: $light;
+}
+
+h1, h2, h3 {
+  font-family: $titleFamily;
+  color: $darkestGrey;
+  font-weight: $bold;
+}
+
+h4, h5, h6 {
+  font-family: $bodyFamily;
+  font-weight: $light;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 7rem;
+}
+
+h2 { 
+  margin: 0;
+}
+
+h5 { 
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 175%;
+}
+
+
+.topNav__links {
+  font-size: 0.75rem;
+}
+
+.body-text{
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.homeHero h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.homeGallery__item a {
+  font-size: 1rem;
+}
+
+.homeGallery__images__textContainer {
+  h2 {
+    font-family: $bodyFamily;
+    font-size: 1.75rem;
+    color: $darkestGrey;
+    padding-top: 0.25rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+    color: $darkestGrey;
+    padding-top: 0.5rem;
+    line-height: 175%;
+
+
+    span {
+      font-weight: $bold;
+    }
+  }
+}
+
+.projectTitle {
+  font-size: 5rem;
+}
+
+.projectSubtitles {
+  font-size: 0.8rem;
+  font-family: $titleFamily;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-top: 5rem;
+}
+
+.innerPagesHeader h5, 
+.innerPagesHeader ul  {
+  font-size: 1rem;
+}
+

@@ -1,0 +1,19 @@
+.lrgWrapper { 
+	margin: auto;
+	width: 95%;
+
+	@media (min-width: $xl){
+		max-width: 2000px;
+	}
+}
+
+.medWrapper {
+	width: 70%;
+	margin: auto;
+}
+
+.smlWrapper {
+	width: 50%;
+	margin: auto;
+}
+

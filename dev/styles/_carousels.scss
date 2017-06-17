@@ -1,0 +1,31 @@
+.carousel {
+  background: #EEE;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 3px;
+  width: 60px;
+  margin: 5px;
+  border-radius: 0;
+}
+
+
+.carousel img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    width: 100%;
+  }
+}
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
