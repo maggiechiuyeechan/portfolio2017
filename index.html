@@ -6,13 +6,16 @@
 	<title>Maggie Chiu Yee Chan</title>
 	<script src="https://use.typekit.net/xvs0nhr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/styles.css">
 </head>
 <body>
 	<header>
-		<div class="colouredBackground"></div>
+		<div id="colouredBackground"></div>
 		<div class="homeHeader medWrapper">
 			<nav class="topNav__container">
 				<p>Currently learning: React.js</p>
@@ -31,13 +34,21 @@
 	</header>
 
 	<section class="homeGallery lrgWrapper">
+		<nav class="homeGallery__Nav filters medWrapper">
+			<div class="filterTitle"> Filter projects: </div>
+			<input type="radio" name="filter" id="all" value="*" checked="checked" /><label for="all">show all</label>
+			<input type="radio" name="filter" id="uiux" value=".ui-ux"/><label for="uiux">UI/UX Design</label>
+			<input type="radio" name="filter" id="dev" value=".development"/><label for="dev">Development</label>
+			<input type="radio" name="filter" id="datavis" value=".data-visualization"/><label for="datavis">Data Visualization</label>
+			<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
 
-		<nav class="homeGallery__Nav filter-button-group medWrapper">
-			<button data-filter="*">Show all</button>
+<!-- 			<button data-filter="*">Show all</button>
+ -->
+<!-- 			<button data-filter="*">Show all</button>
 			<button data-filter=".ui-ux">UI/UX Design</button>
 			<button data-filter=".development">Development</button>
 			<button data-filter=".data-visualization">Data Visualization</button>
-			<button data-filter=".immersive-experiences">Immersive Experiences</button>
+			<button data-filter=".immersive-experiences">Immersive Experiences</button> -->
 		</nav>
 
 			<!-- li.type*12>div.homeGallery__item>a>div.homeGallery__imageContainer>img.homeGallery__images.isotopeclass[srcset][sizes="50vw"]+h2+h5
@@ -247,10 +258,14 @@
 			<li>Github</li>
 		</ul>
 	</footer>
-	
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
 	<script src = "public/scripts/main.js"></script>
+	<script src = "public/scripts/sketch.js"></script>
+
 </body>
 </html>

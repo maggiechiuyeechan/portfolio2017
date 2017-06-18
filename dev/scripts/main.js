@@ -23,8 +23,8 @@ portfolioSite.isotopeFeatures =  function(){
 				});
 			});
 
-	$('.filter-button-group').on( 'click', 'button', function() {
-		var filterValue = $(this).attr('data-filter');
+	$('.filters').on('click', 'input', function () {
+		var filterValue = this.value;
 		$grid.isotope({ filter: filterValue });
 	});
 }
@@ -36,7 +36,6 @@ portfolioSite.isotopeFeatures =  function(){
 //////////////////////
 
 portfolioSite.init = function(){
-	console.log("hello!");
 };
 
 $(function() {

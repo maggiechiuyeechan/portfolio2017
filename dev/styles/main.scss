@@ -28,6 +28,17 @@ $xxs: 400px;
 
 body {
 	background-color: $background;
+	animation: fadein 1s ease-in;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 .imgVidContainer {
