@@ -1,10 +1,13 @@
-.lrgWrapper { 
-	margin: auto;
-	width: 95%;
-
+body { 
+	margin:auto;
 	@media (min-width: $xl){
 		max-width: 2000px;
 	}
+}
+
+.lrgWrapper { 
+	margin: auto;
+	width: 95%;
 }
 
 .medWrapper {
