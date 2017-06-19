@@ -1,5 +1,74 @@
 const portfolioSite = {};
 
+portfolioSite.hideDotNav = function() {
+	$('.filters').on('click', 'input', function () {
+		let filterValue = this.value;
+		if (filterValue == "*"){
+			$(".dot-nav__Container").removeClass("hidden");
+		}else{
+			$(".dot-nav__Container").addClass("hidden");
+		}
+	});
+}
+
+portfolioSite.dotNav = ()=>{
+		
+	    $(window).bind('scroll',function(e){
+	      dotnavigation();
+	    });
+	    
+	    function dotnavigation(){
+	             
+	        var numSections = $('.homeGallery__item').length;
+	        
+	        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');   
+
+	        $('.homeGallery__item').each(function(i,item){
+	          var ele = $(item), nextTop;
+	          
+	          console.log(ele.next().html());
+	          
+	          if (typeof ele.next().offset() != "undefined") {
+	            nextTop = ele.next().offset().top;
+	          }
+	          else {
+	            nextTop = $(document).height();
+	          }
+	          
+	          if (ele.offset() !== null) {
+	            var thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
+	          }
+	          else {
+	            thisTop = 0;
+	          }
+	          
+	          var docTop = $(document).scrollTop();
+	          
+	          if(docTop >= thisTop && (docTop < nextTop)){
+	            $('#dot-nav li').eq(i).addClass('active');
+	          }
+	        });   
+	    }
+
+	    /* get clicks working */
+	    $('#dot-nav li').click(function(){
+	      
+	        var id = $(this).find('a').attr("href"),
+	          posi,
+	          ele,
+	          padding = 0;
+	      
+	        ele = $(id);
+	        posi = ($(ele).offset()||0).top - padding;
+	      
+	        $('html, body').animate({scrollTop:posi}, 'slow');
+	      
+	        return false;
+	    });
+	
+}
+
+
 portfolioSite.isotopeFeatures =  function(){ 
 
 	$('.carousel').flickity({
@@ -22,9 +91,9 @@ portfolioSite.isotopeFeatures =  function(){
 					transitionDuration: '0.2s'
 				});
 			});
-
+	
 	$('.filters').on('click', 'input', function () {
-		var filterValue = this.value;
+		let filterValue = this.value;
 		$grid.isotope({ filter: filterValue });
 	});
 }
@@ -36,12 +105,14 @@ portfolioSite.isotopeFeatures =  function(){
 //////////////////////
 
 portfolioSite.init = function(){
+	portfolioSite.hideDotNav();
+	portfolioSite.dotNav();
 };
+
+$(window).on("load", function(){ portfolioSite.isotopeFeatures(); });
 
 $(function() {
 	//This is our starting point. When the DOM is ready we call the init
 	//method to start things off.
 	portfolioSite.init(); 
-	portfolioSite.isotopeFeatures();
-
 });

@@ -14,17 +14,33 @@
 	<link rel="stylesheet" href="public/styles/styles.css">
 </head>
 <body>
+	<div class="dot-nav__Container">
+		<nav  data-spy="affix" id="dot-nav">
+			<ul>
+				<li class="dotNavitem"><a href="#wayfarer"></a></li>
+				<li class="dotNavitem"><a href="#lcbo"></a></li>
+				<li class="dotNavitem"><a href="#bdProd"></a></li>
+				<li class="dotNavitem"><a href="#bdVis"></a></li>
+				<li class="dotNavitem"><a href="#wildflowers"></a></li>
+				<li class="dotNavitem"><a href="#chthulu"></a></li>
+				<li class="dotNavitem"><a href="#sharp"></a></li>
+				<li class="dotNavitem"><a href="#itat"></a></li>
+				<li class="dotNavitem"><a href="#chMaps"></a></li>
+				<li class="dotNavitem"><a href="#chMain"></a></li>
+				<li class="dotNavitem"><a href="#act"></a></li>
+			</ul>
+		</nav>
+	</div>
 	<header>
 		<div id="colouredBackground"></div>
 		<div class="homeHeader medWrapper">
 			<nav class="topNav__container">
-				<p>Currently learning: React.js</p>
 				<ul class="topNav__links">
-					<li><a href="">About me</a></li>
-					<li><a href="">Project</a></li>
+					<li><a href="#homeAboutBG">About me</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>
 			</nav>
+
 			<div class="homeHero">
 				<h5>Selected works of:</h5>
 				<h1>Maggie Chiu Yee Chan</h1>
@@ -32,37 +48,20 @@
 			</div>
 		</div>
 	</header>
-
+	
 	<section class="homeGallery lrgWrapper">
-		<nav class="homeGallery__Nav filters medWrapper">
-			<div class="filterTitle"> Filter projects: </div>
-			<input type="radio" name="filter" id="all" value="*" checked="checked" /><label for="all">show all</label>
-			<input type="radio" name="filter" id="uiux" value=".ui-ux"/><label for="uiux">UI/UX Design</label>
-			<input type="radio" name="filter" id="dev" value=".development"/><label for="dev">Development</label>
-			<input type="radio" name="filter" id="datavis" value=".data-visualization"/><label for="datavis">Data Visualization</label>
-			<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
-
-<!-- 			<button data-filter="*">Show all</button>
- -->
-<!-- 			<button data-filter="*">Show all</button>
-			<button data-filter=".ui-ux">UI/UX Design</button>
-			<button data-filter=".development">Development</button>
-			<button data-filter=".data-visualization">Data Visualization</button>
-			<button data-filter=".immersive-experiences">Immersive Experiences</button> -->
-		</nav>
-
-			<!-- li.type*12>div.homeGallery__item>a>div.homeGallery__imageContainer>img.homeGallery__images.isotopeclass[srcset][sizes="50vw"]+h2+h5
-			 -->
-			<!-- 			<img class="gallery-img" 
-						srcset="img/gallery_600px.jpg 600w, 
-								img/gallery_400px.jpg 400w,
-								img/gallery_200px.jpg 200w"
-						sizes="50vw">
-			 -->
-		<ul class="homeGallery__container grid medWrapper">
-			<li class="homeGallery__item ui-ux development"><a href="">
+			<div class="filterTitle"> Filter projects by category </div>
+			<nav class="homeGallery__Nav filters medWrapper">
+				<input type="radio" name="filter" id="all" value="*" checked="checked" /><label for="all">show all</label>
+				<input type="radio" name="filter" id="uiux" value=".ui-ux"/><label for="uiux">UI/UX Design</label>
+				<input type="radio" name="filter" id="dev" value=".development"/><label for="dev">Development</label>
+				<input type="radio" name="filter" id="datavis" value=".data-visualization"/><label for="datavis">Data Visualization</label>
+				<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
+			</nav>
+		<ul id="grid" class="homeGallery__container grid effect-2 medWrapper">
+			<li class="homeGallery__item ui-ux development" id="wayfarer" height="700px" ><a href="">
 						<div class="homeGallery__imageContainer">
-							<img alt="" class="homeGallery__images isotopeclass" 
+							<img alt="" class="homeGallery__images" 
 								srcset="assets/homeGallery/Way.jpg" sizes="50vw">
 							<div class = "homeGallery__images__textContainer">
 								<h2>React.js Application</h2>
@@ -71,9 +70,9 @@
 						</div>
 					</a>
 			</li>
-			<li class="homeGallery__item development"><a href="">
+			<li class="homeGallery__item development" id="lcbo" height="700px" ><a href="">
 						<div class="homeGallery__imageContainer">
-							<img alt="" class="homeGallery__images isotopeclass" 
+							<img alt="" class="homeGallery__images" 
 								srcset="assets/homeGallery/LCBO.jpg" sizes="50vw">
 							<div class = "homeGallery__images__textContainer">
 
@@ -85,22 +84,23 @@
 						</div>
 				</a></li>
 
-			<li class="homeGallery__item  ui-ux full-width"><a href="BlueDot_Product.html">
+			<li class="homeGallery__item  ui-ux" id="bdProd" height="700px" >
+				<a href="BlueDot_Product.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 						srcset="assets/BD_prod/BD_Prod_Hero.jpg" sizes="50vw">
-
 						<div class = "homeGallery__images__textContainer">
 							<h2>Designing Tools for Public Health Using Big Data</h2>
 							<h5><strong>Product Design </strong> Adobe Illustrator, Sketch, Invision</h5>
 						</div>
 					</div>
-				</a></li>
+				</a>
+			</li>
 
-			<li class="homeGallery__item data-visualization development full-width">
+			<li class="homeGallery__item data-visualization development" id="bdVis" height="700px" >
 				<a href="BlueDot_Vis.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 							srcset="assets/BD_vis/BD_Vis_Hero.jpg" sizes="50vw">
 						<div class = "homeGallery__images__textContainer">
 							<h2>Visualizing Data for Public Health</h2>
@@ -110,10 +110,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux data-visualization full-width">
+			<li class="homeGallery__item ui-ux data-visualization" id="wildflowers" height="700px" >
 				<a href="Wildflowers.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 							srcset="assets/WF/01.jpg" sizes="50vw">
 						<div class = "homeGallery__images__textContainer">
 							<h2>Wildflowers</h2>
@@ -123,10 +123,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux immersive-experiences">
+			<li class="homeGallery__item ui-ux immersive-experiences" id="chthulu" height="700px" >
 				<a href="Chthuluscene.html">
 					<div class="homeGallery__imageContainer">
-					<img alt="" class="homeGallery__images isotopeclass" 
+					<img alt="" class="homeGallery__images" 
 						srcset="assets/Chthulu/00.jpg" sizes="50vw">
 
 						<div class = "homeGallery__images__textContainer">
@@ -137,10 +137,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization immersive-experiences">
+			<li class="homeGallery__item data-visualization immersive-experiences" id="sharp" height="700px" >
 				<a href="Sharp.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 						srcset="assets/Sharp/00.jpg" sizes="50vw">
 						<div class = "homeGallery__images__textContainer">
 							<h2>Sharp Center Gala</h2>
@@ -150,10 +150,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization immersive-experiences full-width">
+			<li class="homeGallery__item data-visualization immersive-experiences" id="itat" height="700px" >
 				<a href="ITAT.html">
 					<div class="homeGallery__imageContainer">
-					<img alt="" class="homeGallery__images isotopeclass" 
+					<img alt="" class="homeGallery__images" 
 						srcset="assets/ITAT/00.jpg" sizes="50vw">
 					<div class = "homeGallery__images__textContainer">
 						<h2>In the Air, Tonight</h2>
@@ -163,10 +163,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization">
+			<li class="homeGallery__item data-visualization" id="chMaps" height="700px" >
 				<a href="CityOfHomelands_Map.html">
 					<div class="homeGallery__imageContainer">
-					<img alt="" class="homeGallery__images isotopeclass" 
+					<img alt="" class="homeGallery__images" 
 						srcset="assets/CH_Maps/00.jpg" sizes="50vw">
 					<div class = "homeGallery__images__textContainer">
 						<h2>City of Homelands: Maps</h2>
@@ -176,10 +176,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item immersive-experiences">
+			<li class="homeGallery__item immersive-experiences" id="chMain" height="700px" >
 				<a href="CityOfHomelands_Installation.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 							srcset="assets/CH_Main/00.jpg" sizes="50vw">
 						<div class = "homeGallery__images__textContainer">
 							<h2>City of Homelands: Installation</h2>
@@ -189,10 +189,10 @@
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux">
+			<li class="homeGallery__item ui-ux" id="act" height="700px" >
 				<a href="ACT.html">
 					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
+						<img alt="" class="homeGallery__images" 
 							srcset="assets/ACT/00.jpg" sizes="50vw">
 						<div class = "homeGallery__images__textContainer">
 							<h2>Acceptance and Commitment Therapy Mobile App Concept</h2>
@@ -201,25 +201,10 @@
 					</div>
 				</a>
 			</li>
-
-<!-- 			<li class="homeGallery__item data-visualization">
-				<a href="">
-					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images isotopeclass" 
-							srcset="assets/homeGallery/24H.jpg" sizes="50vw">
-
-						<div class = "homeGallery__images__textContainer">
-							<h2>24 Hours</h2>
-							<h5><strong class="Role">Data Visualization </strong>Adobe Illustrator</h5>
-						</div>
-					</div>
-				</a>
-			</li>
- -->
 		</ul>
 	</section>
 
-	<section class="homeAbout">
+	<section class="homeAbout" id="homeAboutBG">
 		<div class="homeAbout__container medWrapper">
 			<div class="homeAbout__bio">
 				<h2>About Me</h2>
@@ -229,7 +214,6 @@
 				<p class="body-text">
 				I have a particular interest in design and development for policy-making, social change and civic engagement. My goal is to imagine and build a brighter future.
 				</p>
-				<a href="">See full experience</a>
 			</div>
 			<div class="tech__tools">
 				<h2>Tech Tools</h2>
@@ -260,6 +244,8 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>

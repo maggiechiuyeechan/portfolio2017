@@ -6,6 +6,7 @@ header {
 	z-index: 10;
 }
 
+
 #colouredBackground {
 	background-color: transparent;
 	position: absolute;
@@ -25,16 +26,20 @@ header {
 	flex-direction: column;
 	text-align: center;
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	height: 70vh;
 }
 
-.topNav__container{
+.topNav__links {
 	display: flex;
+	width: 95%;
 	justify-content: space-between;
+	position: fixed;
+	right: 50%;
+	transform: translateX(50%);	
+	z-index: 1;
 }
 
 .topNav__links li{
 	padding-left: 2rem;
-	font-weight: $bold;
 }

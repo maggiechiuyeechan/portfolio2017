@@ -10,12 +10,12 @@ $xxs: 400px;
 //////////////////
 //// GENERAL ////
 //////////////////
+@import "colors";
 @import "setup";
 
 
 ////COMMON STYLES
 @import "grid";
-@import "colors";
 @import "typography";
 
 ////Components
@@ -24,13 +24,13 @@ $xxs: 400px;
 @import "homeAbout";
 @import "footer";
 @import "carousels";
-@import "_projectDetails";
+@import "projectDetails";
+@import "dotNav";
 
 body {
 	background-color: $background;
 	animation: fadein 1s ease-in;
 }
-
 
 @keyframes fadein {
     from {
@@ -40,6 +40,12 @@ body {
         opacity:1;
     }
 }
+
+.hidden {
+	display:none;
+}
+
+
 
 .imgVidContainer {
 	font-weight: $bold;
@@ -54,6 +60,7 @@ body {
 img {
 	width: 100%;
 }
+
 // body * { 
 // 	border: 1px solid red;
 // }

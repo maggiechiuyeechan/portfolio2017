@@ -13,29 +13,38 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
-  cursor: help;
+  cursor: hand;
   transition: all 0.5s;
 }
 
 input[type="radio"]:checked+label {
   color: $background;
 }
-label, 
-a {
-  &:hover{
-  text-decoration: line-through;
-  color: $background;
-  font-size: 1.1rem;
-  }
-}
-.topNav__links li a,
-.topNav__container a ,
-.topNav__container p  {
-  font-family: $titleFamily;
-  text-transform: uppercase;
+
+.filterTitle {
+   text-align: center;
+   margin-bottom: 2rem;
 }
 
-html, a {
+label, 
+header a {
+  border-bottom: 2px solid $darkestGrey;
+  transform: scale(1);
+  transition: all 0.2s;
+
+  &:hover{
+  text-decoration: line-through;
+  color: $blue;
+  border: none;
+  }
+}
+
+a {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+html {
   font-family: $bodyFamily;
   color: $darkestGrey;
   font-weight: $light;
@@ -79,10 +88,6 @@ p {
 }
 
 
-.topNav__links {
-  font-size: 0.75rem;
-}
-
 .body-text{
   font-size: 1rem;
   line-height: 150%;
@@ -92,18 +97,23 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
+
 .homeGallery__item a {
-  font-size: 1rem;
+  transform: scale(1);
+  transition: all 0.5s;
+  &:hover{
+    transform: scale(1.05);
+  }
 }
 
 .homeGallery__images__textContainer {
   h5 {
+    text-decoration: none;
+
     font-size: 0.9rem;
     color: $darkestGrey;
     padding-top: 0.5rem;
     line-height: 175%;
-
-
     span {
       font-weight: $bold;
     }
@@ -122,8 +132,23 @@ p {
   padding-top: 5rem;
 }
 
-.innerPagesHeader h5, 
-.innerPagesHeader ul  {
-  font-size: 1rem;
+.homeAbout__container h2 {
+  padding-bottom: 1rem;
+  color: $background;
+  border-bottom: 2px solid $background;
 }
 
+.topNav__container{
+  font-family: $titleFamily;
+  text-transform: uppercase;
+}
+
+.innerPagesHeader_link{
+  font-size: 1rem;
+  color: $blue;
+}
+
+.mcyc {
+  font-size: 1.5rem;
+  border: none;
+}
