@@ -1,14 +1,41 @@
 footer { 
-	background-color: $green;
+	background-color: $background;
 	padding: 5rem;
 	text-align: center;
-	color: $background;
+	color: $blue;
+	@media (max-width: $xs){
+		padding: 3rem;
+	}
+	@media (max-width: $xxs){
+		padding: 2rem;
+	}
 
 	ul{
 		margin: 3rem;
 	}
-
+	h1 {
+		color: $blue;
+		@media (max-width: $xs){
+			font-size: 3rem;
+		}
+		@media (max-width: $xxs){
+			font-size: 2.5rem;
+		}
+	}
 	h3{
+		color: $blue;
 		margin-top: 3rem;
+	}
+	.fa {
+		color: $blue;
+		padding: 1rem;
+		font-size: 2rem;
+		transform: scale(1);
+		transition: all 0.2s;
+
+		&:hover {
+			color: $accent;
+			transform: scale(1.1);
+		}
 	}
 }

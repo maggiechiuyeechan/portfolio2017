@@ -6,7 +6,9 @@ header {
 	z-index: 10;
 }
 
-
+.arrowBounce{
+	border: none;
+}
 #colouredBackground {
 	background-color: transparent;
 	position: absolute;
@@ -18,16 +20,17 @@ header {
 }
 
 .homeHero{
-	margin: auto;
+	//margin: auto;
 }
 
 .homeHeader {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	text-align: center;
-	margin-top: 2rem;
+//	margin-top: 2rem;
 	margin-bottom: 1rem;
-	height: 70vh;
+	height: 100vh;
 }
 
 .topNav__links {

@@ -13,10 +13,16 @@ body {
 .medWrapper {
 	width: 70%;
 	margin: auto;
+	@media (max-width: $sm){
+		width: 80%;
+	}
 }
 
 .smlWrapper {
 	width: 50%;
 	margin: auto;
+	@media (max-width: $sm){
+		width: 60%;
+	 }
 }
 

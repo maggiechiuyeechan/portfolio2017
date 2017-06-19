@@ -12,10 +12,12 @@
 
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/styles.css">
+	<link rel="stylesheet" href="public/styles/animate.css">
+
 </head>
 <body>
 	<div class="dot-nav__Container">
-		<nav  data-spy="affix" id="dot-nav">
+		<nav class="hiddenNav" data-spy="affix" id="dot-nav">
 			<ul>
 				<li class="dotNavitem"><a href="#wayfarer"></a></li>
 				<li class="dotNavitem"><a href="#lcbo"></a></li>
@@ -37,20 +39,26 @@
 			<nav class="topNav__container">
 				<ul class="topNav__links">
 					<li><a href="#homeAboutBG">About me</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#contactMe">Contact</a></li>
 				</ul>
 			</nav>
 
 			<div class="homeHero">
-				<h5>Selected works of:</h5>
+				<h5>Design. Code. Strategy.</h5>
 				<h1>Maggie Chiu Yee Chan</h1>
-				<h5>A blend of design and code, focused on building thoughtful digital experiences.</h5>
+				<h5>Focused on building thoughtful digital experiences.</h5>
+			</div>
+
+			<div class="arrow">
+				<a href="#filterTitle">
+					<i id="arrowBounce" class="fa fa-chevron-down animated infinite bounce" aria-hidden="true"></i>
+				</a>
 			</div>
 		</div>
 	</header>
 	
 	<section class="homeGallery lrgWrapper">
-			<div class="filterTitle"> Filter projects by category </div>
+			<div class="filterTitle" id="filterTitle"> Filter projects by category </div>
 			<nav class="homeGallery__Nav filters medWrapper">
 				<input type="radio" name="filter" id="all" value="*" checked="checked" /><label for="all">show all</label>
 				<input type="radio" name="filter" id="uiux" value=".ui-ux"/><label for="uiux">UI/UX Design</label>
@@ -59,144 +67,217 @@
 				<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
 			</nav>
 		<ul id="grid" class="homeGallery__container grid effect-2 medWrapper">
-			<li class="homeGallery__item ui-ux development" id="wayfarer" height="700px" ><a href="">
+			<li class="homeGallery__item ui-ux development" id="wayfarer" ><a href="">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
-								srcset="assets/homeGallery/Way.jpg" sizes="50vw">
+								srcset="
+								assets/homeGallery/Way.jpg
+								" sizes="70vw">
 							<div class = "homeGallery__images__textContainer">
+								<div class="title">
 								<h2>React.js Application</h2>
 								<h5><strong>Design and Development </strong> React.js, Firebase, Mapbox, JavaScript, HTML, CSS</h5>
+								</div>
+								<div class="desc">
+								<h5 class="projectDesc"> A one week project developing with React.js, mapbox and firebase to build a personalized travel map and photo gallery. Users can upload their images to a city they have travelled to and visualize their travels across the globe.</h5>
+								</div>
 							</div>
 						</div>
 					</a>
 			</li>
-			<li class="homeGallery__item development" id="lcbo" height="700px" ><a href="">
+			<li class="homeGallery__item development" id="lcbo"><a href="">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
-								srcset="assets/homeGallery/LCBO.jpg" sizes="50vw">
+								srcset="assets/homeGallery/LCBO.jpg" sizes="70vw">
 							<div class = "homeGallery__images__textContainer">
-
+								<div class="title">
 								<h2>Working with LCBO API</h2>
 								<h5><strong>Design and Development </strong>
 								API, JQuery, JavaScript, HTML, CSS</h5>
-
+								</div>
+								<div class="desc">
+								<h5 class="projectDesc"> A one week project developing with the LCBO API and Google Maps API to build a web site that will return the directions to a LCBO location of your choice depending on a selected organic drink.</h5>
+								</div>
 							</div>
 						</div>
 				</a></li>
 
-			<li class="homeGallery__item  ui-ux" id="bdProd" height="700px" >
+			<li class="homeGallery__item  ui-ux" id="bdProd">
 				<a href="BlueDot_Product.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-						srcset="assets/BD_prod/BD_Prod_Hero.jpg" sizes="50vw">
+						srcset="
+						assets/BD_Prod/20002x/BD_Prod_Hero.jpg 4000w
+						" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
-							<h2>Designing Tools for Public Health Using Big Data</h2>
-							<h5><strong>Product Design </strong> Adobe Illustrator, Sketch, Invision</h5>
+							<div class="title">
+								<h2>Designing Tools for Public Health Using Big Data</h2>
+								<h5><strong>Product Design </strong> Adobe Illustrator, Sketch, Invision</h5>
+							</div>
+							<div class="desc">
+								<h5 class="projectDesc"> A case study of my role at BlueDot a Toronto startup based out of St. Michael's Hospital. At BlueDot, we integrate expertise in clinical medicine and public health with big data analytics and visualization to help decision-makers prepare for and respond to infectious diseases.</h5>
+							</div>
 						</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization development" id="bdVis" height="700px" >
+			<li class="homeGallery__item data-visualization development" id="bdVis">
 				<a href="BlueDot_Vis.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-							srcset="assets/BD_vis/BD_Vis_Hero.jpg" sizes="50vw">
+							srcset="
+							assets/BD_vis/20002x/BD_Vis_Hero.jpg 4000w
+							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
+						<div class="title">
 							<h2>Visualizing Data for Public Health</h2>
 							<h5><strong>Data Visualization </strong>Adobe Illustrator, ArcGIS, HTML/CSS, D3.js</h5>
+								</div>
+								<div class="desc">
+									<h5 class="projectDesc"> Selected works of my data visualizations at BlueDot. These analyses have been published in journals, news outlets and public health organizations such as US CDC (United States Centers for Disease Control and Prevention), ASEAN (Association of Southeast Asian Nations) and WHO (World Health Organization).</h5>
+								</div>
+							</div>
 						</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux data-visualization" id="wildflowers" height="700px" >
+			<li class="homeGallery__item ui-ux data-visualization" id="wildflowers">
 				<a href="Wildflowers.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-							srcset="assets/WF/01.jpg" sizes="50vw">
+							srcset="
+							assets/WF/20002x/01.jpg 4000w
+							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
+						<div class="title">
 							<h2>Wildflowers</h2>
 							<h5><strong>Product Design </strong>Sketch, Adobe Illustrator, Adobe Photoshop</h5>
 						</div>
+						<div class="desc">
+							<h5 class="projectDesc"> A mobile application designed for MOBIO interactive. Wildflowers uses biometric feedback to keep track of, visualize and help users understand the efficacy of their continued meditation practice.</h5>
+						</div>
+						</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux immersive-experiences" id="chthulu" height="700px" >
+			<li class="homeGallery__item ui-ux immersive-experiences" id="chthulu">
 				<a href="Chthuluscene.html">
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
-						srcset="assets/Chthulu/00.jpg" sizes="50vw">
+						srcset="
+						assets/Chthulu/20002x/00.jpg 4000w
+						" sizes="70vw">
 
 						<div class = "homeGallery__images__textContainer">
+						<div class="title">
 							<h2>Chthuluscene: Nuit Blanche 2015</h2>
 							<h5><strong class="Role">Experience Design </strong>Adobe Illustrator, Sketch, Adobe Premier Pro</h5>
 						</div>
-					</div>
-				</a>
-			</li>
-
-			<li class="homeGallery__item data-visualization immersive-experiences" id="sharp" height="700px" >
-				<a href="Sharp.html">
-					<div class="homeGallery__imageContainer">
-						<img alt="" class="homeGallery__images" 
-						srcset="assets/Sharp/00.jpg" sizes="50vw">
-						<div class = "homeGallery__images__textContainer">
-							<h2>Sharp Center Gala</h2>
-							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe AfterEffects</h5>
+						<div class="desc">
+							<h5 class="projectDesc">Chthuluscene was a 12 hour, all-night digital experience created for Nuit Blanche 2015 in Toronto. The installation used a web application and interactivity to facilitate a co-creative and shared experience that was projected on a large 20' projection.</h5>
+						</div>
 						</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization immersive-experiences" id="itat" height="700px" >
+			<li class="homeGallery__item data-visualization immersive-experiences" id="sharp">
+				<a href="Sharp.html">
+					<div class="homeGallery__imageContainer">
+						<img alt="" class="homeGallery__images" 
+						srcset="
+						assets/Sharp/20002x/00.jpg 4000w
+						" sizes="70vw">
+						<div class = "homeGallery__images__textContainer">
+						<div class="title">
+							<h2>Sharp Center 10th Anniversary Gala</h2>
+							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe AfterEffects</h5>
+						</div>
+						<div class="desc">
+							<h5 class="projectDesc">Commissioned by OCAD University to produce a data visualization installation that would be an ambient experience for the gala's attendees, we produced a 160 minute motion animation that incorporated data-driven animation techniques and was displayed as a large-scale projection</h5>
+						</div>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="homeGallery__item data-visualization immersive-experiences" id="itat">
 				<a href="ITAT.html">
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
-						srcset="assets/ITAT/00.jpg" sizes="50vw">
+						srcset="
+						assets/ITAT/20002x/00.jpg 4000w
+						" sizes="70vw">
 					<div class = "homeGallery__images__textContainer">
+					<div class="title">
 						<h2>In the Air, Tonight</h2>
 						<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
+					</div>
+					<div class="desc">
+						<h5 class="projectDesc"> In the Air, Tonight is an interactive architectural installation that took place at the Ryerson Image Center in Toronto. Using the interactive lights installed on the facade of the building, we visualized the global twitter conversation surrounding the topic of "homelessness" and encouraged the public to contribute to the conversation</h5>
+					</div>
 					</div>
 				</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item data-visualization" id="chMaps" height="700px" >
+			<li class="homeGallery__item data-visualization" id="chMaps">
 				<a href="CityOfHomelands_Map.html">
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
-						srcset="assets/CH_Maps/00.jpg" sizes="50vw">
+						srcset="
+						assets/CH_Maps/20002x/00.jpg 4000w
+						" sizes="70vw">
 					<div class = "homeGallery__images__textContainer">
-						<h2>City of Homelands: Maps</h2>
-						<h5><strong>Data Visualization </strong> Mapbox/Tilemill, QGIS, LibreOffice, Adobe Illustrator</h5>
+						<div class="title">
+							<h2>City of Homelands: Maps</h2>
+							<h5><strong>Data Visualization </strong> Mapbox/Tilemill, QGIS, LibreOffice, Adobe Illustrator</h5>
+						</div>
+						<div class="desc">
+							<h5 class="projectDesc">A "City of Homelands" is my cumulative term project. As part of the project, I created a series of maps that explored the topic of place, identity and immigration, specifically of the Chinese diaspora. </h5>
+						</div>
 					</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item immersive-experiences" id="chMain" height="700px" >
+			<li class="homeGallery__item immersive-experiences" id="chMain">
 				<a href="CityOfHomelands_Installation.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-							srcset="assets/CH_Main/00.jpg" sizes="50vw">
+							srcset="
+							assets/CH_Main/20002x/00.jpg 4000w
+							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
+							<div class="title">
 							<h2>City of Homelands: Installation</h2>
 							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
+							</div>
+							<div class="desc">
+							<h5 class="projectDesc">A "City of Homelands" is my cumulative term project that uses videography, photography and interactive media to explore the topic of place, identity and immigration</h5>
 						</div>
 					</div>
 				</a>
 			</li>
 
-			<li class="homeGallery__item ui-ux" id="act" height="700px" >
+			<li class="homeGallery__item ui-ux" id="act">
 				<a href="ACT.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-							srcset="assets/ACT/00.jpg" sizes="50vw">
+							srcset="
+							assets/ACT/20002x/00.jpg 4000w
+							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
-							<h2>Acceptance and Commitment Therapy Mobile App Concept</h2>
-							<h5><strong>Product Design </strong> Adobe Adobe Illustrator</h5>
+							<div class="title">
+								<h2>Acceptance and Commitment Therapy Mobile App Concept</h2>
+								<h5><strong>Product Design </strong> Adobe Adobe Illustrator</h5>
+							</div>
+							<div class="desc">
+								<h5 class="projectDesc">ACT On the Go was a prototype developed as part of a suite of Mindfulness Technologies mobile apps produced by Paula Gardner and the team at OCAD U’s Mobile Experience Lab. ACT on the Go was designed for teenagers to incorporate formal ACT sessions into mobile platforms — iOS and Android platforms.</h5>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -232,17 +313,18 @@
 		</div>
 	</section>
 
-	<footer>
-		<h2> Say Hello </h2>
-		<h3> mail@maggiechan.io </h3>
-		<ul>
-			<li>Medium</li>
-			<li>Twitter</li>
-			<li>Linkedin</li>
-			<li>Github</li>
+	<footer id="contactMe">
+		<h3> 👀 Looking to get in touch? Say hello... </h3>
+		<a href="mailto:mail@maggiechan.io?Subject=Hello%20Maggie" target="_top"><h1> mail@maggiechan.io </h1></a>
+		<h3> ...also find me online elsewhere </h3>
+		<ul class = "footerIcons">
+			<li><a target="_blank" href = "https://medium.com/@maggiechiuyeechan" ><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+			<li><a target="_blank" href = "https://twitter.com/maggie_cy_chan"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a target="_blank" href = "https://www.linkedin.com/in/maggie-chiu-yee-chan-195ba549/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a target="_blank" href ="https://github.com/maggiechiuyeechan"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
 		</ul>
 	</footer>
-
+	<script src="https://use.fontawesome.com/9fac1c85b0.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

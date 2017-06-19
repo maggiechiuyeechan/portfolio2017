@@ -13,12 +13,12 @@
 </head>	
 <body>
 	<header>
-		<div class="innerPagesHeader medWrapper">
+		<div class="innerPagesHeader lrgWrapper">
 			<nav class="topNav__container">
 				<ul class="topNav__links">
-					<li><a href="">About me</a></li>
-					<li><a href="index.html">MCYC</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a class="innerPagesHeader_link" href="">About me</a></li>
+					<li ><a class="mcyc" href="index.html">MCYC</a></li>
+					<li><a class="innerPagesHeader_link" href="">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -28,7 +28,13 @@
 	<section class="projectIntro">
 		<div class="projectHero">
 			<img alt="" class="projectHeroImg" 
-			srcset="assets/CH_Main/00.jpg" sizes="100vw">
+			srcset="
+			assets/CH_Main/4001x/00.jpg 400w, 
+			assets/CH_Main/4002x/00.jpg 800w, 
+			assets/CH_Main/10001x/00.jpg 1000w, 
+			assets/CH_Main/20001x/00.jpg 2000w, 
+			assets/CH_Main/20002x/00.jpg 4000w
+			" sizes="100vw">
 		</div>
 		<div class="projectDescription smlWrapper">
 			<h1 class="projectTitle">City of Homelands: Installation</h1>
@@ -81,10 +87,31 @@
 
 	<!-- Flickity HTML init -->
 		<div class="imgVidContainer medWrapper">
-			  <img srcset="assets/CH_Main/01.jpg" alt="orange tree" sizes="75vw" />
+			  <img srcset="
+			  	assets/CH_Main/4001x/01.jpg 280w, 
+				assets/CH_Main/4002x/01.jpg 560w, 
+				assets/CH_Main/10001x/01.jpg 700w, 
+				assets/CH_Main/20001x/01.jpg 1400w,
+				assets/CH_Main/20002x/01.jpg 2800w
+			  " alt="orange tree" sizes="70vw" />
+
 			  <p class="imgCaptions">RFID embedded photo cards trigger a video when inserted into the photo frame</p>
-			  <img srcset="assets/CH_Main/02.jpg" alt="orange tree" sizes="75vw" />
-			  <img srcset="assets/CH_Main/03.jpg" alt="orange tree" sizes="75vw" />
+
+			  <img srcset="
+			  assets/CH_Main/4001x/02.jpg 280w, 
+			  assets/CH_Main/4002x/02.jpg 560w, 
+			  assets/CH_Main/10001x/02.jpg 700w, 
+			  assets/CH_Main/20001x/02.jpg 1400w,
+			  assets/CH_Main/20002x/02.jpg 2800w 
+			  " alt="orange tree" sizes="70vw" />
+
+			  <img srcset="
+			  assets/CH_Main/4001x/03.jpg 280w, 
+			  assets/CH_Main/4002x/03.jpg 560w, 
+			  assets/CH_Main/10001x/03.jpg 700w, 
+			  assets/CH_Main/20001x/03.jpg 1400w,
+			  assets/CH_Main/20002x/03.jpg 2800w
+			  " alt="orange tree" sizes="70vw" />
 		</div>
 
 		<div class="smlWrapper">
@@ -98,33 +125,74 @@
 
 		<div class="imgVidContainer medWrapper">
 		<p class="imgCaptions">Exhibited at Gallery 1313</p>
-		<img srcset="assets/CH_Main/05.jpg" alt="orange tree" sizes="75vw" />
+			<img srcset="
+			assets/CH_Main/4001x/05.jpg 280w, 
+			assets/CH_Main/4002x/05.jpg 560w, 
+			assets/CH_Main/10001x/05.jpg 700w, 
+			assets/CH_Main/20001x/05.jpg 1400w,
+			assets/CH_Main/20002x/05.jpg 2800w
+			" alt="orange tree" sizes="70vw" />
 			<div class="carousel">
-				<img srcset="assets/CH_Main/Carousel_Exhibition/00.jpg" alt="orange tree" sizes="75vw" />
-				<img srcset="assets/CH_Main/Carousel_Exhibition/01.jpg" alt="orange tree" sizes="75vw" />
-				<img srcset="assets/CH_Main/Carousel_Exhibition/02.jpg" alt="orange tree" sizes="75vw" />
-				<img srcset="assets/CH_Main/Carousel_Exhibition/03.jpg" alt="orange tree" sizes="75vw" />
+				<img srcset="
+				assets/CH_Main/4001x/Carousel_Exhibition/00.jpg 280w, 
+				assets/CH_Main/4002x/Carousel_Exhibition/00.jpg 560w, 
+				assets/CH_Main/10001x/Carousel_Exhibition/00.jpg 700w, 
+				assets/CH_Main/20001x/Carousel_Exhibition/00.jpg 1400w,
+				assets/CH_Main/20002x/Carousel_Exhibition/00.jpg 2800w
+				" alt="orange tree" sizes="70vw" />
+
+				<img srcset="
+				assets/CH_Main/4001x/Carousel_Exhibition/01.jpg 280w, 
+				assets/CH_Main/4002x/Carousel_Exhibition/01.jpg 560w, 
+				assets/CH_Main/10001x/Carousel_Exhibition/01.jpg 700w, 
+				assets/CH_Main/20001x/Carousel_Exhibition/01.jpg 1400w,
+				assets/CH_Main/20002x/Carousel_Exhibition/01.jpg 2800w
+				" alt="orange tree" sizes="70vw" />
+
+				<img srcset="
+				assets/CH_Main/4001x/Carousel_Exhibition/02.jpg 280w, 
+				assets/CH_Main/4002x/Carousel_Exhibition/02.jpg 560w, 
+				assets/CH_Main/10001x/Carousel_Exhibition/02.jpg 700w, 
+				assets/CH_Main/20001x/Carousel_Exhibition/02.jpg 1400w,
+				assets/CH_Main/20002x/Carousel_Exhibition/02.jpg 2800w
+				" alt="orange tree" sizes="70vw" />
+
+				<img srcset="
+				assets/CH_Main/4001x/Carousel_Exhibition/03.jpg 280w, 
+				assets/CH_Main/4002x/Carousel_Exhibition/03.jpg 560w, 
+				assets/CH_Main/10001x/Carousel_Exhibition/03.jpg 700w, 
+				assets/CH_Main/20001x/Carousel_Exhibition/03.jpg 1400w,
+				assets/CH_Main/20002x/Carousel_Exhibition/03.jpg 2800w
+				" alt="orange tree" sizes="70vw" />
 			</div>
 		</div>
 		<div class="imgVidContainer smlWrapper">
 			<p class="imgCaptions">Poster presentation for Urban Ecologies 2013</p>
-			<img srcset="assets/CH_Main/06.jpg" alt="orange tree" sizes="75vw" />
+			<img srcset="
+			assets/CH_Main/4001x/06.jpg 200w, 
+			assets/CH_Main/4002x/06.jpg 400w,
+			assets/CH_Main/10001x/06.jpg 500w, 
+			assets/CH_Main/20001x/06.jpg 1000w, 
+			assets/CH_Main/20002x/06.jpg 2000w
+			" alt="orange tree" sizes="50vw" />
 		</div>
-		<footer>
-			<h2> Say Hello </h2>
-			<h3> mail@maggiechan.io </h3>
-			<ul>
-				<li>Medium</li>
-				<li>Twitter</li>
-				<li>Linkedin</li>
-				<li>Github</li>
-			</ul>
-		</footer>
 
-	</section>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-	<script src = "public/scripts/main.js"></script>
+			<footer id="contactMe">
+				<h3> 👀 Looking to get in touch? Say hello... </h3>
+				<a href="mailto:mail@maggiechan.io?Subject=Hello%20Maggie" target="_top"><h1> mail@maggiechan.io </h1></a>
+				<h3> ...also find me online elsewhere </h3>
+				<ul class = "footerIcons">
+					<li><a target="_blank" href = "https://medium.com/@maggiechiuyeechan" ><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href = "https://twitter.com/maggie_cy_chan"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href = "https://www.linkedin.com/in/maggie-chiu-yee-chan-195ba549/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href ="https://github.com/maggiechiuyeechan"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+				</ul>
+			</footer>
+
+		<script src="https://use.fontawesome.com/9fac1c85b0.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src = "public/scripts/main.js"></script>
 </body>
 </html>

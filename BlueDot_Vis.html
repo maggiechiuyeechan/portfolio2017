@@ -16,12 +16,12 @@
 //////////////////// HEADER  //////////////////// 
 ////////////////////////////////////////////////-->
 	<header>
-		<div class="innerPagesHeader medWrapper">
+		<div class="innerPagesHeader lrgWrapper">
 			<nav class="topNav__container">
 				<ul class="topNav__links">
-					<li><a href="">About me</a></li>
-					<li><a href="index.html">MCYC</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a class="innerPagesHeader_link" href="">About me</a></li>
+					<li ><a class="mcyc" href="index.html">MCYC</a></li>
+					<li><a class="innerPagesHeader_link" href="">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -38,7 +38,13 @@
 	<section class="projectIntro">
 		<div class="projectHero">
 			<img alt="" class="projectHeroImg" 
-			srcset="assets/BD_Vis/BD_Vis_Hero.jpg" sizes="100vw">
+			srcset="
+			assets/BD_Vis/4001x/BD_Vis_Hero.jpg 400w, 
+			assets/BD_Vis/4002x/BD_Vis_Hero.jpg 800w, 
+			assets/BD_Vis/10001x/BD_Vis_Hero.jpg 1000w, 
+			assets/BD_Vis/20001x/BD_Vis_Hero.jpg 2000w, 
+			assets/BD_Vis/20002x/BD_Vis_Hero.jpg 4000w
+			" sizes="100vw">
 		</div>
 		<div class="projectDescription smlWrapper">
 			<h1 class="projectTitle">Designing Data Visualizations for Public Health</h1>
@@ -65,7 +71,7 @@
 				</div>
 				<div class="projectDetails__item Press">
 					<h5 class="projectSubtitles">Press</h5>
-					<p>Washington Post, Lancet ID, Economist</p>
+					<p>Washington Post, <a target="_blank" href="http://www.thelancet.com/journals/laninf/article/PIIS1473-3099(16)30270-5/abstract">Lancet ID, <a target="_blank" href="http://www.economist.com/news/science-and-technology/21688849-newly-emerging-disease-threatening-americas-virus-chequers?fsrc=scn/fb/te/pe/ed/viruschequers">Economist</a></p>
 				</div>
 			</div>
 		</div>
@@ -86,7 +92,15 @@
 			</p>
 		</div>
 		<div class="imgVidContainer medWrapper">
-			<img srcset="assets/BD_Vis/01.jpg" sizes="75vw">
+
+			<img srcset="
+			assets/BD_Vis/4001x/01.jpg 280w, 
+			assets/BD_Vis/4002x/01.jpg 560w, 
+			assets/BD_Vis/10001x/01.jpg 700w, 
+			assets/BD_Vis/20001x/01.jpg 1400w,
+			assets/BD_Vis/20002x/01.jpg 2800w 
+			" alt="" sizes="70vw">
+
 			<p class="imgCaptions">“In May, 2015, locally acquired cases of Zika virus—an arbovirus found in Africa and Asia-Pacific and transmitted via Aedes mosquitoes—were confirmed in Brazil. The presence of Aedes mosquitoes across Latin America, coupled with suitable climatic conditions, have triggered a Zika virus epidemic in Brazil, currently estimated at 440 000–1 300 000 cases. Viraemic travellers have now introduced Zika virus into at least 13 additional countries, where susceptible Aedes mosquitoes have become infected and perpetuated local transmission cycles.” </p>
 		</div>
 
@@ -101,44 +115,136 @@
 		</p>
 		</div>
 	<!-- Flickity HTML init -->
-		<div class="imgVidContainer">
-			<div class="carousel medWrapper">
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/1.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/2.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/3.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/4.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/5.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/6.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/7.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/8.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/9.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/10.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/11.jpg" alt="orange tree" />
-			  <img srcset="assets/BD_Vis/Carousel_TimeSeries/12.jpg" alt="orange tree" />
+		<div class="imgVidContainer imgContainerTwoColumn">
+			<div class="medWrapper twoColumn">
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/1.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/1.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/1.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/1.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/1.jpg 2800w
+			  " alt="orange tree"  sizes="50vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/2.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/2.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/2.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/2.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/2.jpg 2800w 
+			  " alt="orange tree"   sizes="50vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/3.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/3.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/3.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/3.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/3.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/4.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/4.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/4.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/4.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/4.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/5.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/5.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/5.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/5.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/5.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/6.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/6.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/6.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/6.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/6.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/7.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/7.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/7.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/7.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/7.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/8.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/8.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/8.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/8.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/8.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/9.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/9.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/9.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/9.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/9.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/10.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/10.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/10.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/10.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/10.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/11.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/11.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/11.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/11.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/11.jpg 2800w 
+			  " alt="orange tree"   sizes="70vw"/>
+
+			  <img srcset="
+			  assets/BD_Vis/4001x/Carousel_TimeSeries/12.jpg 280w, 
+			  assets/BD_Vis/4002x/Carousel_TimeSeries/12.jpg 560w, 
+			  assets/BD_Vis/10001x/Carousel_TimeSeries/12.jpg 700w, 
+			  assets/BD_Vis/20001x/Carousel_TimeSeries/12.jpg 1400w,
+			  assets/BD_Vis/20002x/Carousel_TimeSeries/12.jpg 2800w
+			  " alt="orange tree"   sizes="70vw"/>
 			</div>
 		</div>
 
 		<div class="imgVidContainer smlWrapper">
 			<p class="imgCaptions">I converted the above series of static maps into a prototyped interactive web-based data visualization using HTML/CSS and D3.js.</p>
-			<img srcset="assets/BD_Vis/06.jpg" sizes="70vw">
+
+			<img srcset="
+			assets/BD_Vis/4001x/06.jpg 200w, 
+			assets/BD_Vis/4002x/06.jpg 400w,
+			assets/BD_Vis/10001x/06.jpg 500w, 
+			assets/BD_Vis/20001x/06.jpg 1000w, 
+			assets/BD_Vis/20002x/06.jpg 2000w
+			" sizes="50vw">
+
 			<iframe src="https://player.vimeo.com/video/221970387" width="100%"" height ="500px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 
-		<footer>
-			<h2> Say Hello </h2>
-			<h3> mail@maggiechan.io </h3>
-			<ul>
-				<li>Medium</li>
-				<li>Twitter</li>
-				<li>Linkedin</li>
-				<li>Github</li>
-			</ul>
-		</footer>
+			<footer id="contactMe">
+				<h3> 👀 Looking to get in touch? Say hello... </h3>
+				<a href="mailto:mail@maggiechan.io?Subject=Hello%20Maggie" target="_top"><h1> mail@maggiechan.io </h1></a>
+				<h3> ...also find me online elsewhere </h3>
+				<ul class = "footerIcons">
+					<li><a target="_blank" href = "https://medium.com/@maggiechiuyeechan" ><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href = "https://twitter.com/maggie_cy_chan"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href = "https://www.linkedin.com/in/maggie-chiu-yee-chan-195ba549/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a target="_blank" href ="https://github.com/maggiechiuyeechan"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+				</ul>
+			</footer>
 
-	</section>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-	<script src = "public/scripts/main.js"></script>
+		<script src="https://use.fontawesome.com/9fac1c85b0.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src = "public/scripts/main.js"></script>
 </body>
 </html>

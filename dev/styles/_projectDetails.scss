@@ -16,9 +16,23 @@
 }
 .projectDetails {
 	display: flex;
+	@media (max-width: $sm){
+		flex-wrap: wrap;
+	}
 }
 
 .projectDetails__item {
 	width: 16%;
 	margin: 0.75%;
+	@media (max-width: $sm){
+		width: 48%;
+	}
+}
+.twoColumn {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	img {
+		width: 50%;
+	}
 }

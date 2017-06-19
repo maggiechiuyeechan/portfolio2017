@@ -1,10 +1,10 @@
 // breakpoint variables
-$xl: 1400px;
-$lg: 1220px;
-$md: 1000px;
+$xl: 1500px; //res img
+$lg: 1225px;
+$md: 1000px; //res img
 $sm: 850px;
-$xs: 700px;
-$xxs: 400px;
+$xs: 700px; //res img
+$xxs: 400px; //res img
 
 
 //////////////////
@@ -45,8 +45,10 @@ body {
 	display:none;
 }
 
-
-
+a,
+a:visited {
+	color: $darkestGrey;
+}
 .imgVidContainer {
 	font-weight: $bold;
 	margin-top: 5rem;
@@ -63,4 +65,25 @@ img {
 
 // body * { 
 // 	border: 1px solid red;
+// }
+
+// html {
+// 	@media (max-width: $xl){
+// 		background: blue;
+// 	}
+// 	@media (max-width: $lg){
+// 		background: purple;
+// 	}
+// 	@media (max-width: $md){
+// 		background: orange;
+// 	}
+// 	@media (max-width: $sm){
+// 		background: yellow;
+// 	}
+// 	@media (max-width: $xs){
+// 		background: green;
+// 	}
+// 	@media (max-width: $xxs){
+// 		background: red;
+// 	}
 // }

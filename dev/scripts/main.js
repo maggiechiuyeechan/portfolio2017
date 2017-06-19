@@ -1,5 +1,19 @@
 const portfolioSite = {};
-
+portfolioSite.smoothScroll = function(){
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	    && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+}
 portfolioSite.hideDotNav = function() {
 	$('.filters').on('click', 'input', function () {
 		let filterValue = this.value;
@@ -15,6 +29,15 @@ portfolioSite.dotNav = ()=>{
 		
 	    $(window).bind('scroll',function(e){
 	      dotnavigation();
+
+
+	      let scrollTop = $(window).scrollTop();
+	      var nav = $('.hiddenNav');
+	      let prev = $('#colouredBackground').offset().top;
+	      console.log(prev);
+
+	      nav.toggleClass('shown', scrollTop > prev);
+	      prev = scrollTop;
 	    });
 	    
 	    function dotnavigation(){
@@ -107,6 +130,7 @@ portfolioSite.isotopeFeatures =  function(){
 portfolioSite.init = function(){
 	portfolioSite.hideDotNav();
 	portfolioSite.dotNav();
+	portfolioSite.smoothScroll();
 };
 
 $(window).on("load", function(){ portfolioSite.isotopeFeatures(); });

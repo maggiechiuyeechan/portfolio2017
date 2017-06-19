@@ -5,6 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 5rem;
 }
 
 .homeGallery__Nav {
@@ -19,7 +20,7 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	font-size:0;
-	margin-top: 15rem;
+	//margin-top: 15rem;
 }
 
 .homeGallery__item {
@@ -39,7 +40,30 @@
 }
 
 .homeGallery__images__textContainer{
+	display:flex;
 	margin-top: 1rem;
+		@media (max-width: $sm){
+			flex-direction: column;
+		}
+
+	.title {
+		width: 48%;
+
+		@media (max-width: $sm){
+			width: 100%;
+		}
+	}
+
+	.desc {
+		margin-left: 2%;
+		width: 48%;
+
+		@media (max-width: $sm){
+			width: 100%;
+			margin: 0;
+		}
+	}
+
 }
 
 .homeGallery__images {
