@@ -4,10 +4,14 @@
 	transform: translateX(50%);	
 	margin-top: 2rem;
 	z-index: 1;
+	width: 100%;
 }
 
 .projectTitle {
 	margin-top: 7rem;
+	@media (max-width: $sm){
+		margin-top: 4rem;
+	}
 }
 
 .projectHeroImg {
@@ -28,11 +32,43 @@
 		width: 48%;
 	}
 }
-.twoColumn {
+
+.nextPrevProj {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	img {
-		width: 50%;
-	}
+	width: 95%;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	right: 50%;
+	transform: translateX(50%);	
+	z-index: 1;
+	margin-bottom: 2rem;
+
 }
+
+#nextProject {
+	font-family: $titleFamily;
+	border:none;
+}
+
+#prevProject {
+	border:none;
+}
+// #nextProject {
+// 	position: fixed;
+// 	top: 50%;
+// 	left: 0;
+// 	transform: rotate(90deg);
+// 	text-decoration: none;
+// 	font-size: 0.75rem;
+// 	border: none;
+// }
+
+// #prevProject {
+// 	position: fixed;
+// 	top: 50%;
+// 	right: 0;
+// 	transform: rotate(-90deg);
+// 	font-size:0.75rem;
+// 	border: none;
+// }

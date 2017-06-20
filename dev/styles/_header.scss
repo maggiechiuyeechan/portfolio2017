@@ -17,22 +17,21 @@ header {
 	right:0;
 	height: 100vh;
 	z-index: -1;
-}
-
-.homeHero{
-	//margin: auto;
+	overflow: hidden;
+	@media (max-width: $xs){
+			height: 800px;
+	}
 }
 
 .homeHeader {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding:3.5rem;
 	text-align: center;
-//	margin-top: 2rem;
-	margin-bottom: 1rem;
+	width: 95%;
 	height: 100vh;
 }
-
 .topNav__links {
 	display: flex;
 	width: 95%;
@@ -41,8 +40,4 @@ header {
 	right: 50%;
 	transform: translateX(50%);	
 	z-index: 1;
-}
-
-.topNav__links li{
-	padding-left: 2rem;
 }

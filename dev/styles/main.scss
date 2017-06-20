@@ -49,6 +49,10 @@ a,
 a:visited {
 	color: $darkestGrey;
 }
+
+a:hover {
+	color: $blue;
+}
 .imgVidContainer {
 	font-weight: $bold;
 	margin-top: 5rem;
@@ -63,7 +67,7 @@ img {
 	width: 100%;
 }
 
-// body * { 
+// html * { 
 // 	border: 1px solid red;
 // }
 

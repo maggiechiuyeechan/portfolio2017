@@ -4,6 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Maggie Chiu Yee Chan</title>
+
+	<link rel="icon" href="fav.ico/apple-icon.png" type="image/gif" sizes="16x16">
 	<script src="https://use.typekit.net/xvs0nhr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -16,6 +18,30 @@
 
 </head>
 <body>
+	<header>
+
+		<div id="colouredBackground"></div>
+		<div class="homeHeader lrgWrapper">
+			<nav class="topNav__container">
+				<ul class="topNav__links">
+						<li><a href="#homeAboutBG">About me</a></li>
+						<li><a href="#contactMe">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="homeHero">
+				<h5>Design. Code. Strategy.</h5>
+				<h1>Maggie Chiu Yee Chan</h1>
+				<h5>Focused on building thoughtful digital experiences.</h5>
+			</div>
+
+			<div class="arrow">
+				<a id="arrowBounceLink" href="#filterTitle">
+					<i id="arrowBounce" class="fa fa-chevron-down animated infinite bounce" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</header>
 	<div class="dot-nav__Container">
 		<nav class="hiddenNav" data-spy="affix" id="dot-nav">
 			<ul>
@@ -33,29 +59,6 @@
 			</ul>
 		</nav>
 	</div>
-	<header>
-		<div id="colouredBackground"></div>
-		<div class="homeHeader medWrapper">
-			<nav class="topNav__container">
-				<ul class="topNav__links">
-					<li><a href="#homeAboutBG">About me</a></li>
-					<li><a href="#contactMe">Contact</a></li>
-				</ul>
-			</nav>
-
-			<div class="homeHero">
-				<h5>Design. Code. Strategy.</h5>
-				<h1>Maggie Chiu Yee Chan</h1>
-				<h5>Focused on building thoughtful digital experiences.</h5>
-			</div>
-
-			<div class="arrow">
-				<a href="#filterTitle">
-					<i id="arrowBounce" class="fa fa-chevron-down animated infinite bounce" aria-hidden="true"></i>
-				</a>
-			</div>
-		</div>
-	</header>
 	
 	<section class="homeGallery lrgWrapper">
 			<div class="filterTitle" id="filterTitle"> Filter projects by category </div>
@@ -67,7 +70,7 @@
 				<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
 			</nav>
 		<ul id="grid" class="homeGallery__container grid effect-2 medWrapper">
-			<li class="homeGallery__item ui-ux development" id="wayfarer" ><a href="">
+			<li class="homeGallery__item development" id="wayfarer" ><a href="https://wayfarer-17532.firebaseapp.com/">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
 								srcset="
@@ -76,27 +79,27 @@
 							<div class = "homeGallery__images__textContainer">
 								<div class="title">
 								<h2>React.js Application</h2>
-								<h5><strong>Design and Development </strong> React.js, Firebase, Mapbox, JavaScript, HTML, CSS</h5>
+								<h5><strong>Front-end Development </strong> React.js, Firebase, Mapbox, JavaScript, HTML, CSS</h5>
 								</div>
 								<div class="desc">
-								<h5 class="projectDesc"> A one week project developing with React.js, mapbox and firebase to build a personalized travel map and photo gallery. Users can upload their images to a city they have travelled to and visualize their travels across the globe.</h5>
+								<h5 class="projectDesc"> A one week project developing with React.js, mapbox and firebase to build a personalized travel map and photo gallery. Users can upload their images to a city they have travelled to and visualize their travels across the globe.</h5><h5><strong>Click to see more</strong></h5>
 								</div>
 							</div>
 						</div>
 					</a>
 			</li>
-			<li class="homeGallery__item development" id="lcbo"><a href="">
+			<li class="homeGallery__item development" id="lcbo"><a href="https://lcboproject.github.io/LCBO-organic-finder/">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
 								srcset="assets/homeGallery/LCBO.jpg" sizes="70vw">
 							<div class = "homeGallery__images__textContainer">
 								<div class="title">
 								<h2>Working with LCBO API</h2>
-								<h5><strong>Design and Development </strong>
+								<h5><strong>Front-end Development </strong>
 								API, JQuery, JavaScript, HTML, CSS</h5>
 								</div>
 								<div class="desc">
-								<h5 class="projectDesc"> A one week project developing with the LCBO API and Google Maps API to build a web site that will return the directions to a LCBO location of your choice depending on a selected organic drink.</h5>
+								<h5 class="projectDesc"> A one week project developing with the LCBO API and Google Maps API to build a web site that will return the directions to a LCBO location of your choice depending on a selected organic drink.</h5><h5><strong>Click to see more</strong></h5>
 								</div>
 							</div>
 						</div>
@@ -107,6 +110,10 @@
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
 						srcset="
+						assets/BD_Prod/4001x/BD_Prod_Hero.jpg 400w, 
+						assets/BD_Prod/4002x/BD_Prod_Hero.jpg 800w, 
+						assets/BD_Prod/10001x/BD_Prod_Hero.jpg 1000w, 
+						assets/BD_Prod/20001x/BD_Prod_Hero.jpg 2000w, 
 						assets/BD_Prod/20002x/BD_Prod_Hero.jpg 4000w
 						" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
@@ -115,7 +122,7 @@
 								<h5><strong>Product Design </strong> Adobe Illustrator, Sketch, Invision</h5>
 							</div>
 							<div class="desc">
-								<h5 class="projectDesc"> A case study of my role at BlueDot a Toronto startup based out of St. Michael's Hospital. At BlueDot, we integrate expertise in clinical medicine and public health with big data analytics and visualization to help decision-makers prepare for and respond to infectious diseases.</h5>
+								<h5 class="projectDesc"> A case study of my role at BlueDot a Toronto startup based out of St. Michael's Hospital. At BlueDot, we integrate expertise in clinical medicine and public health with big data analytics and visualization to help decision-makers prepare for and respond to infectious diseases.</h5><h5><strong>Click to see more</strong></h5>
 							</div>
 						</div>
 					</div>
@@ -127,7 +134,11 @@
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
 							srcset="
-							assets/BD_vis/20002x/BD_Vis_Hero.jpg 4000w
+							assets/BD_Vis/4001x/BD_Vis_Hero.jpg 400w, 
+							assets/BD_Vis/4002x/BD_Vis_Hero.jpg 800w, 
+							assets/BD_Vis/10001x/BD_Vis_Hero.jpg 1000w, 
+							assets/BD_Vis/20001x/BD_Vis_Hero.jpg 2000w, 
+							assets/BD_Vis/20002x/BD_Vis_Hero.jpg 4000w
 							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
 						<div class="title">
@@ -135,7 +146,7 @@
 							<h5><strong>Data Visualization </strong>Adobe Illustrator, ArcGIS, HTML/CSS, D3.js</h5>
 								</div>
 								<div class="desc">
-									<h5 class="projectDesc"> Selected works of my data visualizations at BlueDot. These analyses have been published in journals, news outlets and public health organizations such as US CDC (United States Centers for Disease Control and Prevention), ASEAN (Association of Southeast Asian Nations) and WHO (World Health Organization).</h5>
+									<h5 class="projectDesc"> Selected works of my data visualizations at BlueDot. These analyses have been published in journals, news outlets and public health organizations such as US CDC (United States Centers for Disease Control and Prevention), ASEAN (Association of Southeast Asian Nations) and WHO (World Health Organization).</h5><h5><strong>Click to see more</strong></h5>
 								</div>
 							</div>
 						</div>
@@ -148,6 +159,10 @@
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
 							srcset="
+							assets/WF/4001x/01.jpg 400w, 
+							assets/WF/4002x/01.jpg 800w, 
+							assets/WF/10001x/01.jpg 1000w, 
+							assets/WF/20001x/01.jpg 2000w, 
 							assets/WF/20002x/01.jpg 4000w
 							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
@@ -156,7 +171,7 @@
 							<h5><strong>Product Design </strong>Sketch, Adobe Illustrator, Adobe Photoshop</h5>
 						</div>
 						<div class="desc">
-							<h5 class="projectDesc"> A mobile application designed for MOBIO interactive. Wildflowers uses biometric feedback to keep track of, visualize and help users understand the efficacy of their continued meditation practice.</h5>
+							<h5 class="projectDesc"> A mobile application designed for MOBIO interactive. Wildflowers uses biometric feedback to keep track of, visualize and help users understand the efficacy of their continued meditation practice.</h5><h5><strong>Click to see more</strong></h5>
 						</div>
 						</div>
 					</div>
@@ -168,6 +183,10 @@
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
 						srcset="
+						assets/Chthulu/4001x/00.jpg 400w, 
+						assets/Chthulu/4002x/00.jpg 800w, 
+						assets/Chthulu/10001x/00.jpg 1000w, 
+						assets/Chthulu/20001x/00.jpg 2000w, 
 						assets/Chthulu/20002x/00.jpg 4000w
 						" sizes="70vw">
 
@@ -177,7 +196,7 @@
 							<h5><strong class="Role">Experience Design </strong>Adobe Illustrator, Sketch, Adobe Premier Pro</h5>
 						</div>
 						<div class="desc">
-							<h5 class="projectDesc">Chthuluscene was a 12 hour, all-night digital experience created for Nuit Blanche 2015 in Toronto. The installation used a web application and interactivity to facilitate a co-creative and shared experience that was projected on a large 20' projection.</h5>
+							<h5 class="projectDesc">Chthuluscene was a 12 hour, all-night digital experience created for Nuit Blanche 2015 in Toronto. The installation used a web application and interactivity to facilitate a co-creative and shared experience that was projected on a large 20' projection.</h5><h5><strong>Click to see more</strong></h5>
 						</div>
 						</div>
 					</div>
@@ -189,6 +208,10 @@
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
 						srcset="
+						assets/Sharp/4001x/00.jpg 400w, 
+						assets/Sharp/4002x/00.jpg 800w, 
+						assets/Sharp/10001x/00.jpg 1000w, 
+						assets/Sharp/20001x/00.jpg 2000w, 
 						assets/Sharp/20002x/00.jpg 4000w
 						" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
@@ -197,7 +220,7 @@
 							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe AfterEffects</h5>
 						</div>
 						<div class="desc">
-							<h5 class="projectDesc">Commissioned by OCAD University to produce a data visualization installation that would be an ambient experience for the gala's attendees, we produced a 160 minute motion animation that incorporated data-driven animation techniques and was displayed as a large-scale projection</h5>
+							<h5 class="projectDesc">Commissioned by OCAD University to produce a data visualization installation that would be an ambient experience for the gala's attendees, we produced a 160 minute motion animation that incorporated data-driven animation techniques and was displayed as a large-scale projection</h5><h5><strong>Click to see more</strong></h5>
 						</div>
 						</div>
 					</div>
@@ -209,6 +232,10 @@
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
 						srcset="
+						assets/ITAT/4001x/00.jpg 400w, 
+						assets/ITAT/4002x/00.jpg 800w, 
+						assets/ITAT/10001x/00.jpg 1000w, 
+						assets/ITAT/20001x/00.jpg 2000w, 
 						assets/ITAT/20002x/00.jpg 4000w
 						" sizes="70vw">
 					<div class = "homeGallery__images__textContainer">
@@ -217,7 +244,7 @@
 						<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
 					</div>
 					<div class="desc">
-						<h5 class="projectDesc"> In the Air, Tonight is an interactive architectural installation that took place at the Ryerson Image Center in Toronto. Using the interactive lights installed on the facade of the building, we visualized the global twitter conversation surrounding the topic of "homelessness" and encouraged the public to contribute to the conversation</h5>
+						<h5 class="projectDesc"> In the Air, Tonight is an interactive architectural installation that took place at the Ryerson Image Center in Toronto. Using the interactive lights installed on the facade of the building, we visualized the global twitter conversation surrounding the topic of "homelessness" and encouraged the public to contribute to the conversation</h5><h5><strong>Click to see more</strong></h5>
 					</div>
 					</div>
 				</div>
@@ -229,6 +256,10 @@
 					<div class="homeGallery__imageContainer">
 					<img alt="" class="homeGallery__images" 
 						srcset="
+						assets/CH_Maps/4001x/00.jpg 400w, 
+						assets/CH_Maps/4002x/00.jpg 800w, 
+						assets/CH_Maps/10001x/00.jpg 1000w, 
+						assets/CH_Maps/20001x/00.jpg 2000w, 
 						assets/CH_Maps/20002x/00.jpg 4000w
 						" sizes="70vw">
 					<div class = "homeGallery__images__textContainer">
@@ -237,7 +268,7 @@
 							<h5><strong>Data Visualization </strong> Mapbox/Tilemill, QGIS, LibreOffice, Adobe Illustrator</h5>
 						</div>
 						<div class="desc">
-							<h5 class="projectDesc">A "City of Homelands" is my cumulative term project. As part of the project, I created a series of maps that explored the topic of place, identity and immigration, specifically of the Chinese diaspora. </h5>
+							<h5 class="projectDesc">A "City of Homelands" is my cumulative term project. As part of the project, I created a series of maps that explored the topic of place, identity and immigration, specifically of the Chinese diaspora. </h5><h5><strong>Click to see more</strong></h5>
 						</div>
 					</div>
 					</div>
@@ -248,16 +279,21 @@
 				<a href="CityOfHomelands_Installation.html">
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
-							srcset="
+							srcset= "
+							assets/CH_Main/4001x/00.jpg 400w, 
+							assets/CH_Main/4002x/00.jpg 800w, 
+							assets/CH_Main/10001x/00.jpg 1000w, 
+							assets/CH_Main/20001x/00.jpg 2000w, 
 							assets/CH_Main/20002x/00.jpg 4000w
 							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
 							<div class="title">
-							<h2>City of Homelands: Installation</h2>
-							<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
+								<h2>City of Homelands: Installation</h2>
+								<h5><strong>Experience Design </strong>Processing, Adobe Illustrator, Adobe Photoshop, Adobe Premier Pro</h5>
 							</div>
 							<div class="desc">
-							<h5 class="projectDesc">A "City of Homelands" is my cumulative term project that uses videography, photography and interactive media to explore the topic of place, identity and immigration</h5>
+								<h5 class="projectDesc">A "City of Homelands" is my cumulative term project that uses videography, photography and interactive media to explore the topic of place, identity and immigration</h5><h5><strong>Click to see more</strong></h5>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -268,6 +304,10 @@
 					<div class="homeGallery__imageContainer">
 						<img alt="" class="homeGallery__images" 
 							srcset="
+							assets/ACT/4001x/00.jpg 400w, 
+							assets/ACT/4002x/00.jpg 800w, 
+							assets/ACT/10001x/00.jpg 1000w, 
+							assets/ACT/20001x/00.jpg 2000w, 
 							assets/ACT/20002x/00.jpg 4000w
 							" sizes="70vw">
 						<div class = "homeGallery__images__textContainer">
@@ -276,7 +316,7 @@
 								<h5><strong>Product Design </strong> Adobe Adobe Illustrator</h5>
 							</div>
 							<div class="desc">
-								<h5 class="projectDesc">ACT On the Go was a prototype developed as part of a suite of Mindfulness Technologies mobile apps produced by Paula Gardner and the team at OCAD U’s Mobile Experience Lab. ACT on the Go was designed for teenagers to incorporate formal ACT sessions into mobile platforms — iOS and Android platforms.</h5>
+								<h5 class="projectDesc">ACT On the Go was a prototype developed as part of a suite of Mindfulness Technologies mobile apps produced by Paula Gardner and the team at OCAD U’s Mobile Experience Lab. ACT on the Go was designed for teenagers to incorporate formal ACT sessions into mobile platforms — iOS and Android platforms.</h5><h5><strong>Click to see more</strong></h5>
 							</div>
 						</div>
 					</div>
@@ -285,16 +325,13 @@
 		</ul>
 	</section>
 
-	<section class="homeAbout" id="homeAboutBG">
+	<section class="homeAbout"><a id="homeAboutBG"></a>
 		<div class="homeAbout__container medWrapper">
 			<div class="homeAbout__bio">
 				<h2>About Me</h2>
-				<p class="body-text">I work as an interaction and experience designer based out of Toronto. </p>
-				<p class="body-text">Inspired by the exciting opportunities presented by new technologies and media, I’m excited by designing compelling experiences, and building innovative ways of engaging with information through our world of connected objects, data visualizations and screen-based interfaces.
-				</p class="body-text">
-				<p class="body-text">
-				I have a particular interest in design and development for policy-making, social change and civic engagement. My goal is to imagine and build a brighter future.
-				</p>
+				<p class="body-text">I am a front-end developer and UX/UI designer based out of Toronto.</p>
+				<p class="body-text">I am inspired by the opportunities presented by new technologies and new media. I’m always looking to build and design compelling experiences, innovative ways of engaging with information through our world of connected objects, data visualizations and screen-based interfaces.</p>
+				<p class="body-text">I have a particular interest in design and development for social benefit and civic engagement. My goal is to imagine and build a brighter future.</p>
 			</div>
 			<div class="tech__tools">
 				<h2>Tech Tools</h2>
