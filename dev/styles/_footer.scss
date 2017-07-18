@@ -4,11 +4,10 @@ footer {
 	text-align: center;
 	color: $blue;
 	@media (max-width: $xs){
-		padding: 3rem;
+		padding:0;
+		padding-top: 0.5rem;
 	}
-	@media (max-width: $xxs){
-		padding: 2rem;
-	}
+
 
 	ul{
 		margin: 3rem;
@@ -19,7 +18,7 @@ footer {
 			font-size: 3rem;
 		}
 		@media (max-width: $xxs){
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 	h3{

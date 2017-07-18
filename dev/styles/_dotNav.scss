@@ -27,26 +27,24 @@
 	background-color: rgba(0,0,0,0.15);
 	border-radius: 50%;
 	cursor: pointer;
-	height: 6px;
-	width: 6px;
-	margin-top: 2rem;
+	height: 8px;
+	width: 8px;
+	margin-top: 1rem;
 	margin-right: 2rem;
 	transition: all 0.5s;
-	@media (max-width: $xs){
-		height: 4px;
-		width: 4px;
-		margin: 1.5rem;
+	@media (max-width: $sm){
+	  margin-right: 0.75rem;
 	}
 }
 
 #dot-nav li.active {
 	background-color: $accent;
-	transform: scale(2);
+	transform: scale(1.25);
 }
 
 #dot-nav li:hover{
 	background-color: $green;
-	transform: scale(2);
+	transform: scale(1.25);
 }
 // #dot-nav a {
 // 	outline: 0;

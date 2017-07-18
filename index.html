@@ -4,8 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Maggie Chiu Yee Chan</title>
-
-	<link rel="icon" href="fav.ico/apple-icon.png" type="image/gif" sizes="16x16">
+	<link rel="icon" 
+	      type="image/png" 
+	      href="assets/fav.png">
 	<script src="https://use.typekit.net/xvs0nhr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -21,6 +22,12 @@
 	<header>
 
 		<div id="colouredBackground"></div>
+
+		<div class="decorativeTextContainer">
+			<div class="decorativeText"><h1 class="decorativeTextH1">M</h1></div>
+			<div class="decorativeTextC"><h1 class="decorativeTextH1C">C</h1></div>
+			<div class="decorativeTextY"><h1 class="decorativeTextH1Y">Y</h1></div>
+		</div>
 		<div class="homeHeader lrgWrapper">
 			<nav class="topNav__container">
 				<ul class="topNav__links">
@@ -28,16 +35,23 @@
 						<li><a href="#contactMe">Contact</a></li>
 				</ul>
 			</nav>
-
 			<div class="homeHero">
-				<h5>Design. Code. Strategy.</h5>
+	
+				<div class="rotatingWordsContainer">
+					<div class="rw-words rw-words-1">
+						<span>Design.</span>
+						<span>  Code.</span>
+						<span>  Concept.</span>
+					</div>
+				</div>
+
 				<h1>Maggie Chiu Yee Chan</h1>
 				<h5>Focused on building thoughtful digital experiences.</h5>
 			</div>
 
 			<div class="arrow">
 				<a id="arrowBounceLink" href="#filterTitle">
-					<i id="arrowBounce" class="fa fa-chevron-down animated infinite bounce" aria-hidden="true"></i>
+					<i id="arrowBounce" class="fa fa-chevron-down animated bounce" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>
@@ -70,7 +84,7 @@
 				<input type="radio" name="filter" id="immersive" value=".immersive-experiences"/><label for="immersive">Immersive Experiences</label>			
 			</nav>
 		<ul id="grid" class="homeGallery__container grid effect-2 medWrapper">
-			<li class="homeGallery__item development" id="wayfarer" ><a href="https://wayfarer-17532.firebaseapp.com/">
+			<li class="homeGallery__item development" id="wayfarer" ><a target="_blank" href="https://wayfarer-17532.firebaseapp.com/">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
 								srcset="
@@ -82,13 +96,13 @@
 								<h5><strong>Front-end Development </strong> React.js, Firebase, Mapbox, JavaScript, HTML, CSS</h5>
 								</div>
 								<div class="desc">
-								<h5 class="projectDesc"> A one week project developing with React.js, mapbox and firebase to build a personalized travel map and photo gallery. Users can upload their images to a city they have travelled to and visualize their travels across the globe.</h5><h5><strong>Click to see more</strong></h5>
+								<h5 class="projectDesc"> A one week project developing with React.js, mapbox and firebase to build a personalized travel map and photo gallery. Users can upload their images to a city they have travelled to and visualize their travels across the globe.</h5><h5><strong><span id="em">–</span> Click to see more</strong></h5>
 								</div>
 							</div>
 						</div>
 					</a>
 			</li>
-			<li class="homeGallery__item development" id="lcbo"><a href="https://lcboproject.github.io/LCBO-organic-finder/">
+<!-- 			<li class="homeGallery__item development" target="_blank"  id="lcbo"><a href="https://lcboproject.github.io/LCBO-organic-finder/">
 						<div class="homeGallery__imageContainer">
 							<img alt="" class="homeGallery__images" 
 								srcset="assets/homeGallery/LCBO.jpg" sizes="70vw">
@@ -103,7 +117,7 @@
 								</div>
 							</div>
 						</div>
-				</a></li>
+				</a></li> -->
 
 			<li class="homeGallery__item  ui-ux" id="bdProd">
 				<a href="BlueDot_Product.html">

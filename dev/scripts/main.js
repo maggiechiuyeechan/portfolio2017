@@ -30,13 +30,12 @@ portfolioSite.dotNav = ()=>{
 	    $(window).bind('scroll',function(e){
 	      dotnavigation();
 
-
 	      let scrollTop = $(window).scrollTop();
 	      var nav = $('.hiddenNav');
 	      let prev = $('#colouredBackground').offset().top;
-	      console.log(prev);
+	      let before = $("#homeAboutBG").offset().top;
 
-	      nav.toggleClass('shown', scrollTop > prev);
+	      nav.toggleClass('shown', scrollTop > prev  && scrollTop < before);
 	      prev = scrollTop;
 	    });
 	    
